@@ -1,0 +1,87 @@
+{
+  "city" : "Gothenberg",
+  "taxRules" : {
+    "exemptedVehicles" :["ambulance", "fire-brigade", "bus", "motorcycle", "diplomat", "military", "foreign", "police"],
+    "rules" : [
+      {
+        "taxApplicableToVehicles" : ["car", "truck", "tractor", "bike"],
+        "weekendFree" : true,
+        "publicHolidayFree" : true,
+        "dayBeforePublicHolidayFree" : true,
+        "freeMonths" : ["July"],
+        "maxTimeBeforeNextTaxation" : "60",
+        "publicHolidays" : [
+          "2013-01-01",
+          "2013-01-06",
+          "2013-03-29",
+          "2013-03-31",
+          "2013-04-01",
+          "2013-05-01",
+          "2013-05-09",
+          "2013-05-19",
+          "2013-06-06",
+          "2013-06-22",
+          "2013-11-02",
+          "2013-12-24",
+          "2013-12-25",
+          "2013-12-26",
+          "2013-12-31"
+        ],
+        "maxTaxPerDay" : "60",
+        "weekdayRules" :
+        [
+          {
+            "inTime": "06:00",
+            "outTime": "06:29",
+            "taxValue": 8
+          },
+          {
+            "inTime": "06:30",
+            "outTime": "06:59",
+            "taxValue": 13
+          },
+          {
+            "inTime": "07:00",
+            "outTime": "07:59",
+            "taxValue": 18
+          },
+          {
+            "inTime": "08:00",
+            "outTime": "08:29",
+            "taxValue": 13
+          },
+          {
+            "inTime": "08:30",
+            "outTime": "14:59",
+            "taxValue": 8
+          },
+          {
+            "inTime": "15:00",
+            "outTime": "15:29",
+            "taxValue": 13
+          },
+          {
+            "inTime": "15:30",
+            "outTime": "16:59",
+            "taxValue": 18
+          },
+          {
+            "inTime": "17:00",
+            "outTime": "17:59",
+            "taxValue": 13
+          },
+          {
+            "inTime": "18:00",
+            "outTime": "18:29",
+            "taxValue": 8
+          },
+          {
+            "inTime": "18:30",
+            "outTime": "05:59",
+            "taxValue": 0
+          }
+        ]
+      }
+    ]
+  }
+}
